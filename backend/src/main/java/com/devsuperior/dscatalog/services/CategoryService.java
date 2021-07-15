@@ -31,4 +31,9 @@ public class CategoryService {
 	Category entity = obj.orElseThrow(()-> new EntityNotFoundException("Entity Not Found!"));
 	return new CategoryDTO(entity);
 	}
+	@Transactional
+	public CategoryDTO insert(CategoryDTO dto) {
+		//Category
+		return null;
+	}
 }
